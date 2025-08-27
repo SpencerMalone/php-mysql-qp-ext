@@ -1,0 +1,10 @@
+#! /bin/sh
+#
+# Created by configure
+
+CPPFLAGS='-I/opt/homebrew/opt/mysql@8.4/include' \
+LDFLAGS='-L/opt/homebrew/opt/mysql@8.4/lib' \
+'./configure' \
+'--enable-mysql-qp' \
+'--with-mysql-config=/opt/homebrew/opt/mysql@8.4/bin/mysql_config' \
+"$@"
